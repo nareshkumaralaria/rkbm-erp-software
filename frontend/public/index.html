@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link href="%PUBLIC_URL%/assets/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/chartist/css/chartist.min.css">
+  </link>
+  <link href="%PUBLIC_URL%/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  </link>
+  <link href="%PUBLIC_URL%/assets/css/style.css" rel="stylesheet">
+  </link>
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/assets/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/pickadate/themes/default.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/pickadate/themes/default.date.css">
+  <link href="%PUBLIC_URL%/assets/vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+  </link>
+
+  <title>React App</title>
+
+  <style>
+    .nav-header {
+      background-color: #f1f1f1 !important;
+    }
+
+    .content-body .container-fluid {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+
+  <!-- Required vendors -->
+  <script src="%PUBLIC_URL%/assets/vendor/global/global.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/chart.js/Chart.bundle.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/custom.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/deznav-init.js"></script>
+  <!-- Apex Chart -->
+  <script src="%PUBLIC_URL%/assets/vendor/apexchart/apexchart.js"></script>
+
+  <!-- Vectormap -->
+  <!-- Chart piety plugin files -->
+  <script src="%PUBLIC_URL%/assets/vendor/peity/jquery.peity.min.js"></script>
+
+  <!-- Chartist -->
+  <script src="%PUBLIC_URL%/assets/vendor/chartist/js/chartist.min.js"></script>
+
+  <!-- Dashboard 1 -->
+  <script src="%PUBLIC_URL%/assets/js/dashboard/dashboard-1.js"></script>
+  <!-- Svganimation scripts -->
+  <script src="%PUBLIC_URL%/assets/vendor/svganimation/vivus.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/svganimation/svg.animation.js"></script>
+
+  <script src="%PUBLIC_URL%/assets/vendor/jqueryui/js/jquery-ui.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/moment/moment.min.js"></script>
+
+  <!-- Datatable -->
+  <script src="%PUBLIC_URL%/assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/plugins-init/datatables.init.js"></script>
+
+
+  <script src="%PUBLIC_URL%/assets/vendor/pickadate/picker.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/pickadate/picker.time.js"></script>
+  <script src="%PUBLIC_URL%/assets/vendor/pickadate/picker.date.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/plugins-init/material-date-picker-init.js"></script>
+  <!-- Pickdate -->
+  <script src="%PUBLIC_URL%/assets/js/plugins-init/pickadate-init.js"></script>
+
+
+  <!-- Summernote -->
+  <script src="%PUBLIC_URL%/assets/vendor/summernote/js/summernote.min.js"></script>
+  <!-- Summernote init -->
+  <script src="%PUBLIC_URL%/assets/js/plugins-init/summernote-init.js"></script>
+
+  <script src="%PUBLIC_URL%/assets/vendor/fullcalendar/js/fullcalendar.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/plugins-init/fullcalendar-init.js"></script>
+
+  <script>
+    (function ($) {
+      "use strict"
+
+      var direction = getUrlParams('dir');
+      if (direction != 'rtl') {
+        direction = 'ltr';
+      }
+
+      new dezSettings({
+        typography: "roboto",
+        version: "light",
+        layout: "vertical",
+        headerBg: "color_1",
+        navheaderBg: "color_3",
+        sidebarBg: "color_1",
+        sidebarStyle: "full",
+        sidebarPosition: "fixed",
+        headerPosition: "fixed",
+        containerLayout: "wide",
+        direction: direction
+      });
+
+    })(jQuery);
+  </script>
+
+</body>
+
+</html>

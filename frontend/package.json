@@ -1,0 +1,59 @@
+{
+  "name": "rkbm-reactjs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/interaction": "^5.10.1",
+    "@fullcalendar/react": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.0",
+    "bootstrap": "^5.1.3",
+    "datatables.net-dt": "^1.13.1",
+    "fullcalendar": "^5.10.2",
+    "jquery": "^3.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "multiselect-react-dropdown": "^2.0.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.2",
+    "react-responsive-tabs": "^4.4.3",
+    "react-router-dom": "^6.2.2",
+    "react-saga": "^0.3.1",
+    "react-scripts": "5.0.0",
+    "react-to-print": "^2.14.7",
+    "react-toastify": "^8.2.0",
+    "redux": "^4.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

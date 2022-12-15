@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.searchWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.searchWrapper::-webkit-scrollbar-thumb,
+.search-wrapper::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 6px;
+}
+
+.searchWrapper,
+.search-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  max-height: 50px;
+}
+
+.searchWrapper span {
+  border-radius: 4px;
+  background: #656c73;
+}
+
+.ReactToPrint {
+  margin-left: -8.5rem;
+}
